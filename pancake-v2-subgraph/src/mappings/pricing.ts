@@ -4,9 +4,9 @@ import { BigDecimal, Address } from '@graphprotocol/graph-ts/index'
 import { ZERO_BD, factoryContract, ADDRESS_ZERO, ONE_BD } from './helpers'
 
 const WBNB_ADDRESS = '0xa1077a294dde1b09bb078844df40758a5d0f9a27'
-const BUSD_WBNB_PAIR = '0x1b96b92314c44b159149f7e0303511fb2fc4774f' // created block 589414
-const DAI_WBNB_PAIR = '0xf3010261b58b2874639ca2e860e9005e3be5de0b'  // created block 481116
-const USDT_WBNB_PAIR = '0x20bcc3b8a0091ddac2d0bc30f68e6cbb97de59cd' // created block 648115
+const BUSD_WBNB_PAIR = '0xC854B0AEda17e3ccF3D9E3d8dA45dfd7Ae7d42AA' // created block 589414
+const DAI_WBNB_PAIR = '0x8109e4f30427d618DC277A3D448FF2cEdf6b2862'  // created block 481116
+const USDT_WBNB_PAIR = '0xbe9B2EFb63f85Aa9bac8BA95e9D62DA2Fee0E61b' // created block 648115
 
 export function getEthPriceInUSD(): BigDecimal {
   // fetch eth prices for each stablecoin
@@ -42,12 +42,11 @@ export function getEthPriceInUSD(): BigDecimal {
 
 // token where amounts should contribute to tracked volume and liquidity
 let WHITELIST: string[] = [
-  '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c', // WBNB
-  '0xe9e7cea3dedca5984780bafc599bd69add087d56', // BUSD
-  '0x55d398326f99059ff775485246999027b3197955', // USDT
-  '0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d', // USDC
-  '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3', // DAI
-  '0x2170ed0880ac9a755fd29b2688956bd959f933f8', // WETH
+  '0xa1077a294dde1b09bb078844df40758a5d0f9a27', // WBNB
+  '0x95b303987a60c71504d99aa1b13b4da07b0790ab', // BUSD
+  '0x15d38573d2feeb82e7ad5187ab8c1d52810b1f07', // USDT
+  '0x0cb6f5a34ad42ec934882a05265a7d5f59b51a2f', // USDC
+  '0x2b591e99afe9f32eaa6214f7b7629768c40eeb39', // DAI
 ]
 
 // minimum liquidity for price to get tracked
